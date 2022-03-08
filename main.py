@@ -8,28 +8,28 @@ class CustomException(Exception):
 
 def add(x,y):
     for n in (x, y):
-        if not isinstance(n, int) or not isinstance(n, float):
+        if not isinstance(n, int) and not isinstance(n, float):
             raise CustomException("Must be int or float for add")
 
     return x+y
 
 def subtract(x,y):
     for n in (x, y):
-        if not isinstance(n, int) or not isinstance(n, float):
+        if not isinstance(n, int) and not isinstance(n, float):
             raise CustomException("Must be int or float for subtract")
 
     return x-y
 
 def multiply(x,y):
     for n in (x, y):
-        if not isinstance(n, int) or not isinstance(n, float):
+        if not isinstance(n, int) and not isinstance(n, float):
             raise CustomException("Must be int or float for multiply")
 
     return x*y
 
 def divide(x,y):
     for n in (x, y):
-        if not isinstance(n, int) or not isinstance(n, float):
+        if not isinstance(n, int) and not isinstance(n, float):
             raise CustomException("Must be int or float for divide")
 
     return x/y
@@ -37,7 +37,6 @@ def divide(x,y):
 if __name__ == '__main__':
     x, y = 12, 4
     print(add(x, y))
-    print(add(x, "a"))
     print(subtract(x, y))
     print(multiply(x, y))
     print(divide(x, y))
