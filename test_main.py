@@ -1,6 +1,6 @@
 import unittest
 from unittest import TestCase
-from main import add, subtract, multiply
+from main import add, subtract, multiply, divide
 
 class Test(TestCase):
     def test_add(self):
@@ -11,6 +11,9 @@ class Test(TestCase):
         
     def test_multiply(self):
         self.assertEqual(multiply(2, 3), 6)
+    
+    def test_divide(self):
+        self.assertEqual(divide(6, 2), 3)
 
 if __name__=="__main__":
     unittest.main()
