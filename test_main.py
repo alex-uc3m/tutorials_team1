@@ -1,6 +1,6 @@
 import unittest
 from unittest import TestCase
-from main import add, subtract
+from main import add, subtract, multiply
 
 class Test(TestCase):
     def test_add(self):
