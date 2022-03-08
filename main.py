@@ -16,5 +16,3 @@ if __name__ == '__main__':
     print(subtract(x, y))
     print(multiply(x, y))
     print(divide(x, y))
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
