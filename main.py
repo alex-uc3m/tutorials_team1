@@ -9,17 +9,29 @@ class CustomException(Exception):
 def add(x,y):
     for n in (x, y):
         if not isinstance(n, int) or not isinstance(n, float):
-            raise CustomException("Must be int or float")
+            raise CustomException("Must be int or float for add")
 
     return x+y
 
 def subtract(x,y):
+    for n in (x, y):
+        if not isinstance(n, int) or not isinstance(n, float):
+            raise CustomException("Must be int or float for subtract")
+
     return x-y
 
 def multiply(x,y):
+    for n in (x, y):
+        if not isinstance(n, int) or not isinstance(n, float):
+            raise CustomException("Must be int or float for multiply")
+
     return x*y
 
 def divide(x,y):
+    for n in (x, y):
+        if not isinstance(n, int) or not isinstance(n, float):
+            raise CustomException("Must be int or float for divide")
+
     return x/y
 
 if __name__ == '__main__':
